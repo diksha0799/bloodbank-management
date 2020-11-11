@@ -1,0 +1,127 @@
+{% extends 'basics.html' %}
+
+{% block title%}Blood Bank{% endblock %}
+
+{% block css %}
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Balsamiq Sans', cursive;
+}
+
+.logo{
+    color: #fff;
+}
+.navbar-custom{
+    padding-top:5rem;
+    padding-bottom: 5rem;
+    background:rgba(7,7,7,0.5);
+}
+
+/*===== end of nav======*/
+
+.hero{
+    padding-top: 10.5rem;
+    padding-bottom: 10rem;
+    text-align: center;
+    color: #000;
+    background-image: url("https://png.pngtree.com/thumb_back/fh260/background/20200808/pngtree-covid-in-the-blood-cell-background-image_387530.jpg");
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center;
+    background-size: cover;
+}
+.hero-heading{
+    font-size: 2.25rem;
+    font-weight: bold;
+    line-height: 3.25rem;
+    margin-bottom: 2rem;
+    color:#ffffff;
+}
+
+.circle{
+    border-radius: 50%;
+    width:150px
+}
+
+ {% endblock %}
+    
+  
+ {% block body %}
+      <!-- navbar starts -->
+      
+    
+
+</nav>
+      <!--navbar ends-->
+
+      <!--Hero-->
+      <header class = "hero">
+          <div class="container">
+              <div class="hero-heading text-uppercase">
+                  EVERY LIFE MATTERS SO SAVE EVERY LIFE!!! 
+              </div>
+              
+                 <a class="btn btn-danger btn-lg text-uppercase" style = "margin-right:4px" href="registerhospital/">Register Hospital </a>
+                 <a class="btn btn-danger btn-lg text-uppercase" style = "margin-left:4px" href="registerreciever/">Register Reciever </a>
+                 
+          </div>
+      </header>
+      <!--end of hero-->
+
+      <!--Major Causes-->
+      <section class="mt-5 page-section" id="causes">
+          <div class="container">
+              <div class="text-center">
+                  <h2 class="section-heading text-uppercase font-weight-bold">
+                      Major Causes
+                  </h2>
+                  <h3 class="section-subheading text-muted">
+                      Provide Blood To Needy Ones
+                    </h3>
+              </div>
+              <!--end of title-->
+              <!--single-item-->
+              <div class="row text-center">
+                  <div class="col-md-2">
+                      <img class="circle" src = "https://img.freepik.com/free-vector/14th-june-world-blood-donor-day-concept-poster_1017-25364.jpg?size=338&ext=jpg&ga=GA1.2.2011869824.1586067537">
+                      <p class="text-muted">Starve a vampire, donate blood.
+                      </p>
+                  </div>
+                  <div class="col-md-2">
+                    <img class="circle" src = "https://img.freepik.com/free-vector/blood-type-template-illustration_1057-363.jpg?size=338&ext=jpg&ga=GA1.2.2011869824.1586067537">
+                     <p class="text-muted">Dont't let mosquitoes get your blood first.
+                    </p>
+                </div>
+                <div class="col-md-2">
+                    <img class="circle" src = "https://img.freepik.com/free-vector/save-blood-concept-world-blood-donor-day_1017-25543.jpg?size=338&ext=jpg&ga=GA1.2.2011869824.1586067537">
+                    <p class="text-muted">Donate your blood for a reason, let the reason to be life.
+                    </p>
+                </div>
+                  <div class="col-md-2">
+                    <img class="circle" src = "https://img.freepik.com/free-vector/blood-cells-flow-red-medicine-biology-medical-human-health-science-microbiology_1284-41692.jpg?size=338&ext=jpg&ga=GA1.2.2011869824.1586067537">
+                     <p class="text-muted">I have nothing to offer but blood, toll, tears & sweat.
+                    </p>
+                </div>
+                <div class="col-md-2">
+                    <img class="circle" src = "https://img.freepik.com/free-vector/blood-donor-icons-flat_1284-13435.jpg?size=338&ext=jpg&ga=GA1.2.2011869824.1586067537">
+                    <p class="text-muted">Never feel yourself weak, you have the ability to save a life, just donate blood.
+                    </p>
+                </div>
+              
+            <div class="col-md-2">
+                <img class="circle" src = "https://img.freepik.com/free-vector/blood-donation-bag-with-tube-shaped-heart-background_1057-983.jpg?size=338&ext=jpg&ga=GA1.2.2011869824.1586067537">
+                <p class="text-muted">You are rockstar in someone's life, donate blood.
+                </p>
+            </div>
+          </div>
+              <!--end of single item-->
+          </div>
+      </section>
+      <!--end of Major Causes-->
+      {% endblock %}
+   
+

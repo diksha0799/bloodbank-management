@@ -1,0 +1,118 @@
+{% extends 'basics.html' %}
+{% block title%}Reciever Registration{% endblock %}
+
+{% block css %}
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;  
+
+body{
+    font-family: 'Balsamiq Sans', cursive;
+   
+}
+
+.logo{
+      color: #fff;
+}
+.navbar-custom{
+     padding-top:5rem;
+	 padding-bottom: 5rem;
+	 background:rgba(255, 99, 71, 0.6);
+}
+
+
+
+.loginbox {
+    width:420px;
+    height:520px;
+    background:#808080;
+    background-image: url("https://image.freepik.com/free-photo/heart-hand-philanthropy_73523-1626.jpg");
+    background-repeat: no-repeat;
+    color:#;
+    top:50%;
+    left:50%;
+    position:absolute;
+    transform:translate(-50%,-50%);
+    box-sizing:border-box;
+    padding:70px 30px;
+}
+
+h1{
+    margin:0;
+    padding:0 0 20px;
+    text-align:center;
+    font-size:22px;
+}
+.loginbox p{
+    margin:0;
+    padding:0;
+    font-weight:bold;
+}
+.loginbox input{
+    width:100%;
+    margin-bottom:20px;
+}
+.loginbox input[type="text"],input[type="Username"]{
+    border:none;
+    border-bottom:1px solid #fff;
+    background:transparent;
+    outline:none;
+    height:40px;
+    color:#fff;
+    font-size:16px;
+}
+.loginbox input[type="text"],input[type="Password"]{
+	border:none;
+	border-bottom:1px solid #fff;
+	background:transparent;
+	outline:none;
+	height:40px;
+	color:#fff;
+	font-size:16px;
+}
+
+.loginbox input[type="submit"]{
+	border:none;
+	outline:none;
+	height:40;
+	background:#fb2525;
+	color:=#fff;
+	font-size:18px;
+	border-radius:20px;
+}
+.loginbox input[type="submit"]:hover{
+	cursor:pointer;
+	background:#ffc107;
+	color:#000;
+}
+.loginbox  a{
+	text-decoration:none;
+	font-size:12px;
+	line-height:20px;
+	color:black;
+}
+.loginbox  a:hover{
+	color:black;
+}
+
+{% endblock %}
+{% block body %}
+{% load static %}
+
+    	<div class="loginbox">
+    		
+    		<h1>Login Here</h1>
+    		<form>
+    			<p>Username</p>
+    			<input type="text" name="" placeholder="Enter Username">
+    			<p>Password</p>
+    			<input type="password" name="" placeholder="Enter Password">
+    			<input type="submit" name="" value="login">
+    			<a href="#">Forget Password?</a><br>
+    			<a href="#">Don't have an account</a>
+    		</form>
+		</div>
+	
+
+	
+{% endblock %}

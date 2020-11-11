@@ -1,0 +1,49 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}RecieveBlood | BloodBank{% endblock title %}
+{% block transferactive %}active{% endblock transferactive %}
+
+{% block style %}
+<style>
+    
+    @media only screen and (min-width: 768px)   {
+        .table {
+            width: 80%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+</style>
+{% endblock style %}
+
+{% block body %}
+<div class="container my-3">
+    <h1 class="text-center">Hospital List</h1>
+    <p class="text-center">Tip: Choose hospital for requesting Bloodsample</p>
+    <div class="container my-3 mt-3 userlist">
+        <table class="table my-5 mb-5 pb-5">
+            <thead class="thead-dark">
+                <tr>
+                    <th scope="col">Hospital Name</th>
+                    <th scope="col">Blood Samples</th>
+                    <th scope="col">Options</th>
+                   
+                </tr>
+            </thead>
+            <tbody>
+                {% for hospital in hospitals %}
+                <tr>
+                    <td><a href="/hospital/{{hospital.hospitalname}}">{{hospital.hospitalname}}</a></td>
+                    <td>{{hospital.current_bloodsample}}</td>
+                    <td>
+                        <a class="btn btn-danger btn-lg text-uppercase" style = "margin-right:4px" href="registerhospital/">Add BloodSample </a>
+                       <a class="btn btn-danger btn-lg text-uppercase" style = "margin-left:4px" href="registerreciever/">Request Bloodsample</a>
+                   </td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+</div>
+{% endblock body %}

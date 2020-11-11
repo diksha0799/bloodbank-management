@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <style>
+        {% block css %} {% endblock %}
+    </style>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" 
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/8b5d875e3e.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <title>Blood Bank</title>
+  </head>
+  <body>
+      <!-- navbar starts -->
+      <nav class = "navbar navbar-expand-lg navbar-dark navbar-custom fixed-top"
+      id="mainNav">
+    <a class="navbar-brand"><span class="logo">BLOOD BANK MANAGEMENT</span></a>
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-targets="#navbarResponsive"
+      aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">Menu <i class="fas fa-bars ml-1"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav text-uppercase ml-auto">
+            <li class="nav-items">
+                <a class="nav-link" href="home/">Home</a>
+            </li>
+            <li class="nav-items">
+                <a class="nav-link" href="hospital/">Hospitals</a>
+            </li>
+            <li class="nav-items">
+                <a class="nav-link" href="home/reciever/">Recievers</a>
+            </li>
+            <li class="nav-items">
+                <a class="nav-link" href="login/">Log In</a>
+            </li>
+            
+        </ul>
+    </div>
+
+</nav>
+{% block body %} {% endblock %}
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+{% block js %} {% endblock %}
+</body>
+</html>
