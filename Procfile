@@ -1,1 +1,1 @@
-web: gunicorn creditTransferManager.wsgi
+web: gunicorn bloodbank.wsgi
